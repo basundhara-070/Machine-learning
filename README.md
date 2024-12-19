@@ -15,8 +15,9 @@
 
 **2. Supervised ML**
    Model learns from labeled data to make predictions or decisions.
-   _Types -_\n
-   Regression - used for continuous output. E.g., predicting house prices, forcasting stock proces.\n
+   _Types -_
+   
+   Regression - used for continuous output. E.g., predicting house prices, forcasting stock process.
    Classification - used for categorical output. E.g., email spam detection, image recognition.
    
 **3. Umsupervised ML**
