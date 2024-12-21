@@ -58,7 +58,21 @@ Suppose we have a dataset in which we have some independent variable lets say 'x
 Our aim is to reduce the distance between our predicted points(lying on the best fit line) and the actual data points. Keep updating  ɵ<sub>0</sub> and  ɵ<sub>1</sub> till you get the best fit line.<br/>
 <br/>
 **Cost Function : <br/>
-J( ɵ<sub>0</sub>,ɵ<sub>1</sub>) = (1/2m) <sup>m</sup><sub>i=1</sub>∑(h<sub>ɵ</sub>(x<sub>i</sub>)-y<sub>i</sub>)²**
-   
+J(ɵ<sub>0</sub>,ɵ<sub>1</sub>) = (1/2m) ∑(h<sub>ɵ</sub>(x<sub>i</sub>)-y<sub>i</sub>)²**<br/>
+summation is from i=1 to i=m for all data points. <br/>
+This equation is also known as squared error function. <br/>
+![image](https://github.com/user-attachments/assets/82b187a0-3de2-4298-9643-895672a63937)
+</br>_Finding J(ɵ<sub>0</sub>,ɵ<sub>1</sub>) at ɵ<sub>0</sub> = 0 and for different values of ɵ<sub>1</sub>._</br>
+Using the value at global minima, we can draw the best best line. But how to react the global minima? Basically we can go to any point on the gradient descent curve and use convergence algorithm to arrive at the global minima.<br/>
+
+**Convergence algorithm:<br/>**
+_Repeat until convergence_{<br/>
+ ɵ<sub>j</sub> := ɵ<sub>j</sub> -  ɑ ɗ J(ɵ<sub>0</sub>,ɵ<sub>1</sub>)/ɗ ɵ<sub>j</sub><br/>
+}<br/>
+ɗ J(ɵ<sub>0</sub>,ɵ<sub>1</sub>)/ɗ ɵ<sub>j</sub> = derivative or the instantaneous slope<br/>
+ɑ = learning rate, it should be small otherwise the value of ɵ<sub>j</sub> will not converge. It should not be that small such that it takes infinite time to reach to the global minima.<br/>
+In linear regression, the cost function that we use generally don't give a local minimas but in deep learning like in ANN we have local minimas. So, there we use optimisers to solve this problem.
+
+
    
 
