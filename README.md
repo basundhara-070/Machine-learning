@@ -47,7 +47,18 @@
    - LDA
 
 # Linear Regression
-Suppose we have a dataset in which we have some independent variable and a dependent variable. Using this dataset as training dataset we make a model and make
+Suppose we have a dataset in which we have some independent variable lets say 'x' and a dependent variable 'y'. Using this dataset as training dataset we make a model which is a hypothesis and make a best fit line which helps us do all the predictictions. So, we can give a new input and obtain a new output for that input. Using a performance matrix, we verify the model. Here, we represent 'y' as a linear function of 'x'.<br/><br/>
+
+**_Equation of straight line:_ <br/>**
+**h<sub>ɵ</sub>(x<sub>i</sub>) = ɵ<sub>0</sub> + ɵ<sub>1</sub>x<sub>i</sub> <br/>**
+ ɵ<sub>0</sub> = intercept<br/>
+ ɵ<sub>1</sub> = slope<br/>
+ x<sub>i</sub> = data points<br/>
+<br/>
+Our aim is to reduce the distance between our predicted points(lying on the best fit line) and the actual data points. Keep updating  ɵ<sub>0</sub> and  ɵ<sub>1</sub> till you get the best fit line.<br/>
+<br/>
+**Cost Function : <br/>
+J( ɵ<sub>0</sub>,ɵ<sub>1</sub>) = (1/2m) <sup>m</sup><sub>i=1</sub>∑(h<sub>ɵ</sub>(x<sub>i</sub>)-y<sub>i</sub>)²**
    
    
 
